@@ -1,0 +1,14 @@
+.footer-social-media
+    .footer-social-media-title Follow
+    .footer-social-media-list
+        // no li b/c a tag needs to be wrapper so can use susy grid measurements of parent for padding to match negative margins
+        //- xml:space=preserve fix for ie11, from https://stackoverflow.com/a/33241394/4504073
+        //- li.footer-social-media-item
+        a.footer-social-media-link(href="<?= option('visualdialogue.socialicons.facebook') ?>" target="_blank")
+            svg.footer-social-media-icon(viewBox="0 0 16.36 16.4" xml:space="preserve" ): use(xlink:href="#facebook")
+        //- li.footer-social-media-item
+        a.footer-social-media-link(href="<?= option('visualdialogue.socialicons.instagram') ?>" target="_blank")
+            svg.footer-social-media-icon(viewBox="0 0 345.4 345.4" xml:space="preserve" ): use(xlink:href="#instagram")
+        //- li.footer-social-media-item
+        a.footer-social-media-link(href="<?= option('visualdialogue.socialicons.twitter') ?>" target="_blank")
+            svg.footer-social-media-icon(viewBox="0 0 18.9 15.33" xml:space="preserve" ): use(xlink:href="#twitter")
